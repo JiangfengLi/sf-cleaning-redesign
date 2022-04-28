@@ -1,0 +1,503 @@
+.auth-form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 426px;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding-top: 53px;
+    padding-bottom: 53px;
+    padding-right: 24px;
+    padding-left: 24px;
+    border-width: 10px;
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 80px;
+}
+
+.register-form{
+    border-color: rgba(182, 225, 61, 1);
+}
+
+.signup-form{
+    border-color: #F6C002;
+}
+
+.label-container {
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 0px 0px 0px;
+
+    position: static;
+    width: 300px;
+    height: 188px;
+    left: 53px;
+    top: 98px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 23px 0px;
+}
+.form-title-1 {
+    position: static;
+    width: 240px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 50px;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+}
+.form-title-2 {
+    position: static;
+    width: 288px;
+    height: 80px;
+    left: 0px;
+    top: 108px;
+    
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 8px 0px;
+}
+.div-4 {
+    display: flex;
+    flex-direction: column;
+    max-width: 313px;
+    margin-top: 23px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.div-5 {
+    display: flex;
+}
+@media (max-width: 999px) {
+    .div-5 {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: calc(103.17% - 0px);
+    margin-left: 0px;
+}
+@media (max-width: 999px) {
+    .column {
+        width: 100%;
+    }
+}
+.form-prompt {
+    max-width: 293px;
+    font-size: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.map-page{
+    /* Register Page */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 35px 25px 35px 0px;
+
+    position: relative;
+    width: 1438px;
+    height: 1015px;
+}
+
+.auth-background{
+    /* justify-content: center; */
+    background: url("images/original-street-cleaning-sf-website.png");
+}
+
+.main-page-background{
+    background: url("images/selecting-street-cleanning-schedule.svg");
+}
+
+.map-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 31px;
+
+    position: static;
+    width: 141px;
+    height: 49px;
+    left: 1272px;
+    top: 35px;
+
+    background: #000000;
+    border: 0.6px solid #8E8383;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px 0px 0px;
+}
+
+.form-input{
+    margin: 5px 0px 5px 0px;
+}
+
+.register-btn{
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 144px;
+
+    position: absolute;
+    width: 341px;
+    height: 56px;
+    left: 31.5px;
+    top: 331px;
+
+    background: url("images/register-button.svg");
+    border: 0.6px solid #8E8383;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.form-button{
+    width: 290px;
+    height: 49px;
+    margin: 5px 0px 5px 0px;
+}
+
+.third-party-auth{
+    width: 250px;
+    height: 49px;
+    margin: 5px 0px 5px 0px;
+}
+
+.nav-bar{
+    /* nav-bar */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 346px;
+    height: 70px;
+    left: 1063px;
+    top: 35px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.nav-item{
+    position: static;
+    width: 55px;
+    height: 62px;
+    top: 4px;
+
+    /* Inside auto layout */
+    flex: none;
+    flex-grow: 0;
+    margin: 0px 15px;
+}
+
+.favor-icon{
+    left: 2px;
+    background: url("images/favor-icon.svg");
+    order: 0;
+}
+
+.unfavor-icon{
+    left: 2px;
+    background: url("images/unfavor-icon.svg");
+    order: 0;
+}
+
+.favorite-list{
+    left: 78px;
+    background: url("images/favorite-list.svg");
+    order: 1;
+}
+
+.share-icon{
+    left: 154px;
+    width: 50px;
+    height: 50px;
+    background: url("images/share-icon.svg");
+    order: 2;
+}
+
+.user-icon {
+    width: 114px;
+    height: 103px;
+    top: -16.5px;
+    left: 230px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    background: url("images/user-icon.svg");
+    order: 3;
+}
+
+.list-background{
+    /* Managing List of Favorite Streets */
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 5px;
+
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+}
+
+.list-nav-bar{
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 1440px;
+    height: 103px;
+    left: 35px;
+    top: 18px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 69px 0px;
+}
+
+.close-icon{
+    position: static;
+    width: 65px;
+    height: 50px;
+    left: 0px;
+    top: 17px;
+    
+    background: url("images/close-icon.svg");
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 50px;  
+}
+
+.page-title{
+    position: static;
+    width: 723px;
+    height: 28px;
+    left: 10px;
+    top: 10px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 28px;
+    /* identical to box height, or 29% */
+    
+    text-align: center;
+    letter-spacing: 0.2px;
+    
+    color: #000000;
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.street-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+
+    position: static;
+    width: 1024px;
+    height: 614px;
+    left: 2px;
+    top: 307px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 69px 0px;
+}
+
+.street-card{
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 791px;
+    padding: 3px;
+
+    position: static;
+    left: 1.09%;
+    right: 1.09%;
+    top: 1.63%;
+    bottom: 75.41%;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+
+    /* Inside auto layout */
+    flex: none;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+.street-info{
+    position: static;
+    width: 300px;
+    height: 130px;
+    left: 0px;
+    top: 3px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 136%;
+    /* or 44px */
+    color: #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 40px;
+}
+
+.direction-label{
+    position: static;
+    width: 38px;
+    height: 77px;
+    left: 460px;
+    top: 29.5px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 10px 0px 100px;
+}
+
+.street-item{
+    position: static;
+    width: 84px;
+    height: 84px;
+    left: 600.33px;
+    top: 14.5px;
+
+    flex: none;
+    flex-grow: 0;
+    margin: 0px 10px 0px 30px;   
+}
+
+.yellow-bell{
+    order: 2;
+    background: url("images/yellow-bell.svg");
+}
+
+.white-bell{
+    width: 67px;
+    height: 78px;
+    order: 2;
+    background: url("images/white-bell.svg");
+}
+
+.remove-icon{
+    width: 101px;
+    height: 76px;
+    left: 776px;
+    top: 18.5px;
+
+    order: 3;
+    background: url("images/remove-icon.svg");
+    margin: 0px 20px 0px 10px; 
+}

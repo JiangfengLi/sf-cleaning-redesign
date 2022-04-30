@@ -15,23 +15,26 @@
     <script src="ajax/functions.js"></script>
 </head>
 <body>
-
     <div class="list-background">
         <div class="list-nav-bar">
             <a class="close-icon" href="main-page.html"></a>
             <div id="user-icon" class="user-icon nav-item" ></div>
         </div>
+
+        <div id="dialogue-placeholder">
+        </div>
+
         <div class="page-title">Favorite Streets</div>
         <div class="street-list">
             <div class="street-card" style="order: 0;">
                 <div class="street-info">
-                    2049 Fulton Street <br>
-                    Fri<br>
-                    9:00 AM - 11:00 AM.     
+                    8116 Lincoln Way <br>
+                    1st, 3rd Tue <br>
+                    8:00 AM - 10:00 AM  
                 </div>
                 <div class="direction-label">N</div>
-                <a class="yellow-bell street-item" href=""></a>
-                <a class="remove-icon street-item"></a>
+                <div onclick="showReminderDialogue('8116 Lincoln Way');" class="yellow-bell street-item" href=""></div>
+                <div onclick="showRemoveDialogue('8116 Lincoln Way');"  class="remove-icon street-item"></div>
             </div>
             <div class="street-card" style="order: 1;">
                 <div class="street-info">
@@ -40,8 +43,8 @@
                     9:00 AM - 11:00 AM
                 </div>
                 <div class="direction-label">N</div>
-                <a class="white-bell street-item" href=""></a>
-                <a class="remove-icon street-item" href=""></a>
+                <div onclick="showReminderDialogue('2049 Fulton Street');" class="white-bell street-item"></div>
+                <div onclick="showRemoveDialogue('2049 Fulton Street');" class="remove-icon street-item"></div>
             </div>
             <div class="street-card" style="order: 2;">
                 <div class="street-info">
@@ -50,8 +53,8 @@
                     9:00 AM - 6:00 PM
                 </div>
                 <div class="direction-label">S</div>
-                <a class="white-bell street-item" href=""></a>
-                <a class="remove-icon street-item" href=""></a>
+                <div onclick="showReminderDialogue('2191 Irving Street');" class="white-bell street-item" href=""></div>
+                <div onclick="showRemoveDialogue('2191 Irving Street');" class="remove-icon street-item" href=""></div>
             </div>
             <div class="street-card" style="order: 2;">
                 <div class="street-info">
@@ -60,8 +63,8 @@
                     7:00 AM - 9:00 AM
                 </div>
                 <div class="direction-label">S</div>
-                <a class="white-bell street-item" href=""></a>
-                <a class="remove-icon street-item" href=""></a>
+                <div onclick="showReminderDialogue('1528 21st Ave');" class="white-bell street-item" href=""></div>
+                <div onclick="showRemoveDialogue('1528 21st Ave');" class="remove-icon street-item" href=""></div>
             </div>
         </div>
     </div>

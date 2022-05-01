@@ -38,7 +38,7 @@ function updateUserBottonStatus(){
     if(showUserPopup){
         document.getElementById('user-popup-placeholder').innerHTML = 
             '<div id="user-dialogue" class="user-popup">' +
-                '<a href="" class="setting-button user-popup-button">Setting</a>' +
+                '<a href="" class="btn-primary setting-button user-popup-button">Setting</a>' +
                 '<a href="index.html" class="logout-button user-popup-button">Log Out</a>' +
             '</div>';
     } else{

@@ -294,17 +294,19 @@
 .user-popup{
     position: absolute;
 
-    height: 218.10px;
-    width: 200px;
+    height: 230px;
+    width: 176px;
     top: 114.8946533203125px;
     
     right: 28.95px;
     bottom: -213.59%;
     
-    background: #FFFFFF;
+    background: url("images/pop-up-dialogue.svg");
+
+    /* background: #FFFFFF; 
     border: 1px solid #000000;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 5px;*/
 
     /* Auto layout */
     display: flex;
@@ -319,16 +321,16 @@
 
 .user-popup-button{
     position: static;
-    width: 160.63px;
-    height: 70px;
+    width: 140.63px;
+    height: 50px;
     left: 0px;
     top: 30px;
     
-    background: #FFFFFF;
-    border: 1px solid #000000;
+    /* background: #FFFFFF; 
+    border: 1px solid #000000;*/
     box-sizing: border-box;
-    border-radius: 20px;
-    padding-top: 15px;
+    border-radius: 5px;
+    /* padding-top: px; */
     margin: 10px 0px;
 
 
@@ -340,8 +342,16 @@
     
     text-align: center;
     letter-spacing: 0.2px;
-    
-    color: #000000;
+}
+
+.setting-button{
+    order: 0;
+}
+
+.logout-button{
+    order: 1;
+    background: #55bb33;
+    color: #FFFFFF;
 }
 
 .list-background{

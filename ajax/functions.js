@@ -1,5 +1,4 @@
-let isFavorite = false;
-let showShareIcon = false;
+let isFavorite = false, showShareIcon = false, showUserPopup = false;
 
 function updateFavor(){
     isFavorite = !isFavorite;
@@ -23,26 +22,36 @@ function updateFavor(){
 function updateShareStatus(){
     showShareIcon = !showShareIcon;
 
-    // console.log("showShareIcon: " + showShareIcon)
-
-    var classList = document.getElementById("share-dialogue").classList;
-    // console.log("before classList: " + classList)
-
     if(showShareIcon){
-        classList.add("show-share-dialogue");
+        document.getElementById('share-dialogue-placeholder').innerHTML = 
+            '<div id="share-dialogue" class="share-dialogue-container"></div>';
     } else{
-        classList.remove("show-share-dialogue");
+        document.getElementById('share-dialogue').remove();
     }
 
     // console.log("share-dialogue: " + classList)
+}
+
+function updateUserBottonStatus(){
+    showUserPopup = !showUserPopup;
+
+    if(showUserPopup){
+        document.getElementById('user-popup-placeholder').innerHTML = 
+            '<div id="user-dialogue" class="user-popup">' +
+                '<a href="" class="setting-button user-popup-button">Setting</a>' +
+                '<a href="index.html" class="logout-button user-popup-button">Log Out</a>' +
+            '</div>';
+    } else{
+        document.getElementById('user-dialogue').remove();
+    }
 }
 
 function showRemoveDialogue(streetName){
     let content = '<div class="popup-title dialogue-row">Remove Street?</div>' +
         '<div class="popup-headline-2 dialogue-row">' + streetName + '</div>' +
         '<div class="popup-button-row dialogue-row">' + 
-            '<div onclick="closeDialogue();" class="yes-button remove-popup-button-text remove-popup-button">Yes</div>' +
-            '<div onclick="closeDialogue();" class="no-button remove-popup-button-text remove-popup-button">No</div>' +
+            '<div onclick="closeDialogue();" class="yes-button  popup-button">Yes</div>' +
+            '<div onclick="closeDialogue();" class="no-button  popup-button">No</div>' +
         '</div>';
     showDialogue(content);
     // console.log("share-dialogue: " + classList)
@@ -82,8 +91,8 @@ function showReminderDialogue(streetName){
             '</select>' +
         '</div>' +
         '<div class="reminder-popup-button-row popup-button-row dialogue-row"> ' +
-            '<div onclick="closeDialogue();" class="yes-button remove-popup-button-text remove-popup-button">Confirm</div>' +
-            '<div onclick="closeDialogue();" class="no-button remove-popup-button-text remove-popup-button">Cancel</div>' +
+            '<div onclick="closeDialogue();" class="yes-button  popup-button">Confirm</div>' +
+            '<div onclick="closeDialogue();" class="no-button  popup-button">Cancel</div>' +
         '</div>';
     showDialogue(content);
 }
